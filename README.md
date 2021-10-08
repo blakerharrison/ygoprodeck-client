@@ -1,5 +1,5 @@
 # Yugopro Client (iOS)
-A framework to encapsulate the service code and models for the YuGoPro API.
+A framework to encapsulate the client code and models that fetches data from the YuGoPro service.
 
 ### API Reference 
 https://db.ygoprodeck.com/api-guide/
