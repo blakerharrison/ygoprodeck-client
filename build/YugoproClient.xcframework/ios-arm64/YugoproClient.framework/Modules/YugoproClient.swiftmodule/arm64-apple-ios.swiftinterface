@@ -1,0 +1,232 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios14.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name YugoproClient
+import Foundation
+import Swift
+public struct CardsData : Swift.Decodable {
+  public let data: [YugoproClient.CardData]
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CardData : Swift.Decodable {
+  @YugoproClient.DecodableDefault.EmptyInt public var id: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyString public var name: Swift.String {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyString public var type: Swift.String {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyString public var desc: Swift.String {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyInt public var atk: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyInt public var def: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyInt public var level: Swift.Int {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyString public var race: Swift.String {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyString public var attribute: Swift.String {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyList public var card_sets: [YugoproClient.CardData.cardSet] {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyList public var card_images: [YugoproClient.CardData.cardImage] {
+    get
+    set
+    _modify
+  }
+  @YugoproClient.DecodableDefault.EmptyList public var card_prices: [YugoproClient.CardData.cardPrice] {
+    get
+    set
+    _modify
+  }
+  public struct cardSet : Swift.Decodable {
+    @YugoproClient.DecodableDefault.EmptyString public var set_name: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var set_code: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var set_rarity: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var set_rarity_code: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var set_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct cardImage : Swift.Decodable {
+    @YugoproClient.DecodableDefault.EmptyInt public var id: Swift.Int {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var image_url: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var image_url_small: Swift.String {
+      get
+      set
+      _modify
+    }
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct cardPrice : Swift.Decodable {
+    @YugoproClient.DecodableDefault.EmptyString public var cardmarket_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var tcgplayer_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var ebay_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var amazon_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    @YugoproClient.DecodableDefault.EmptyString public var coolstuffinc_price: Swift.String {
+      get
+      set
+      _modify
+    }
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol DecodableDefaultSource {
+  associatedtype Value : Swift.Decodable
+  static var defaultValue: Self.Value { get }
+}
+public enum DecodableDefault {
+}
+extension DecodableDefault {
+  @propertyWrapper public struct Wrapper<Source> where Source : YugoproClient.DecodableDefaultSource {
+    public init()
+    public var wrappedValue: Source.Value
+  }
+}
+extension DecodableDefault.Wrapper : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension DecodableDefault {
+  public typealias Source = YugoproClient.DecodableDefaultSource
+  public typealias List = Swift.Decodable & Swift.ExpressibleByArrayLiteral
+  public typealias Map = Swift.Decodable & Swift.ExpressibleByDictionaryLiteral
+  public enum Sources {
+    public enum True : YugoproClient.DecodableDefault.Source {
+      public static var defaultValue: Swift.Bool {
+        get
+      }
+      public typealias Value = Swift.Bool
+    }
+    public enum False : YugoproClient.DecodableDefault.Source {
+      public static var defaultValue: Swift.Bool {
+        get
+      }
+      public typealias Value = Swift.Bool
+    }
+    public enum EmptyString : YugoproClient.DecodableDefault.Source {
+      public static var defaultValue: Swift.String {
+        get
+      }
+      public typealias Value = Swift.String
+    }
+    public enum EmptyInt : YugoproClient.DecodableDefault.Source {
+      public static var defaultValue: Swift.Int {
+        get
+      }
+      public typealias Value = Swift.Int
+    }
+    public enum EmptyList<T> : YugoproClient.DecodableDefault.Source where T : Swift.Decodable, T : Swift.ExpressibleByArrayLiteral {
+      public static var defaultValue: T {
+        get
+      }
+      public typealias Value = T
+    }
+    public enum EmptyMap<T> : YugoproClient.DecodableDefault.Source where T : Swift.Decodable, T : Swift.ExpressibleByDictionaryLiteral {
+      public static var defaultValue: T {
+        get
+      }
+      public typealias Value = T
+    }
+  }
+}
+extension DecodableDefault {
+  public typealias True = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.True>
+  public typealias False = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.False>
+  public typealias EmptyString = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.EmptyString>
+  public typealias EmptyInt = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.EmptyInt>
+  public typealias EmptyList<T> = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.EmptyList<T>> where T : Swift.Decodable, T : Swift.ExpressibleByArrayLiteral
+  public typealias EmptyMap<T> = YugoproClient.DecodableDefault.Wrapper<YugoproClient.DecodableDefault.Sources.EmptyMap<T>> where T : Swift.Decodable, T : Swift.ExpressibleByDictionaryLiteral
+}
+@_hasMissingDesignatedInitializers public class YGOPRODeckClient {
+  public typealias CardsDataCompletion = ([YugoproClient.CardData]?, Swift.Error?) -> ()
+  public static func getAllCards(completion: @escaping YugoproClient.YGOPRODeckClient.CardsDataCompletion)
+  @objc deinit
+}
+public struct Strings {
+}
+public enum YGOPRODeckError : Swift.Error {
+  case noError
+  case buildUrlFailure
+  case noData
+  case decodingError
+  public static func == (a: YugoproClient.YGOPRODeckError, b: YugoproClient.YGOPRODeckError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension YugoproClient.YGOPRODeckError : Swift.Equatable {}
+extension YugoproClient.YGOPRODeckError : Swift.Hashable {}
