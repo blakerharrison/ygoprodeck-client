@@ -61,7 +61,7 @@
 		AC526E9E270FC91C00EF386C = {
 			isa = PBXGroup;
 			children = (
-				AC526EAA270FC91C00EF386C /* Yugopro */,
+				AC526EAA270FC91C00EF386C /* YugoproService */,
 				AC526EB5270FC91C00EF386C /* YugoproTests */,
 				AC526EA9270FC91C00EF386C /* Products */,
 			);
@@ -76,7 +76,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC526EAA270FC91C00EF386C /* Yugopro */ = {
+		AC526EAA270FC91C00EF386C /* YugoproService */ = {
 			isa = PBXGroup;
 			children = (
 				AC526EAC270FC91C00EF386C /* Info.plist */,
@@ -84,7 +84,7 @@
 				AC526ED5270FCB5C00EF386C /* Model */,
 				AC526ED4270FCB3700EF386C /* Shared */,
 			);
-			path = Yugopro;
+			path = YugoproService;
 			sourceTree = "<group>";
 		};
 		AC526EB5270FC91C00EF386C /* YugoproTests */ = {
