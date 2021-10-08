@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC526EB2270FC91C00EF386C /* Yugopro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC526EA8270FC91C00EF386C /* Yugopro.framework */; };
+		AC526EB2270FC91C00EF386C /* YugoproService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC526EA8270FC91C00EF386C /* YugoproService.framework */; };
 		AC526EB7270FC91C00EF386C /* yugoproTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC526EB6270FC91C00EF386C /* yugoproTests.swift */; };
 		AC526EB9270FC91C00EF386C /* yugopro.h in Headers */ = {isa = PBXBuildFile; fileRef = AC526EAB270FC91C00EF386C /* yugopro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC526EC6270FC97500EF386C /* YGOPRODeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC526EC4270FC97500EF386C /* YGOPRODeckService.swift */; };
@@ -27,10 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC526EA8270FC91C00EF386C /* Yugopro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yugopro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC526EA8270FC91C00EF386C /* YugoproService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YugoproService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC526EAB270FC91C00EF386C /* yugopro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yugopro.h; sourceTree = "<group>"; };
 		AC526EAC270FC91C00EF386C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC526EB1270FC91C00EF386C /* YugoproTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YugoproTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC526EB1270FC91C00EF386C /* YugoproServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YugoproServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC526EB6270FC91C00EF386C /* yugoproTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yugoproTests.swift; sourceTree = "<group>"; };
 		AC526EB8270FC91C00EF386C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC526EC4270FC97500EF386C /* YGOPRODeckService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGOPRODeckService.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC526EB2270FC91C00EF386C /* Yugopro.framework in Frameworks */,
+				AC526EB2270FC91C00EF386C /* YugoproService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +70,8 @@
 		AC526EA9270FC91C00EF386C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC526EA8270FC91C00EF386C /* Yugopro.framework */,
-				AC526EB1270FC91C00EF386C /* YugoproTests.xctest */,
+				AC526EA8270FC91C00EF386C /* YugoproService.framework */,
+				AC526EB1270FC91C00EF386C /* YugoproServiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AC526EA7270FC91C00EF386C /* Yugopro */ = {
+		AC526EA7270FC91C00EF386C /* YugoproService */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC526EBC270FC91C00EF386C /* Build configuration list for PBXNativeTarget "Yugopro" */;
+			buildConfigurationList = AC526EBC270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproService" */;
 			buildPhases = (
 				AC526EA3270FC91C00EF386C /* Headers */,
 				AC526EA4270FC91C00EF386C /* Sources */,
@@ -149,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = Yugopro;
+			name = YugoproService;
 			productName = yugopro;
-			productReference = AC526EA8270FC91C00EF386C /* Yugopro.framework */;
+			productReference = AC526EA8270FC91C00EF386C /* YugoproService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AC526EB0270FC91C00EF386C /* YugoproTests */ = {
+		AC526EB0270FC91C00EF386C /* YugoproServiceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC526EBF270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproTests" */;
+			buildConfigurationList = AC526EBF270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproServiceTests" */;
 			buildPhases = (
 				AC526EAD270FC91C00EF386C /* Sources */,
 				AC526EAE270FC91C00EF386C /* Frameworks */,
@@ -167,9 +167,9 @@
 			dependencies = (
 				AC526EB4270FC91C00EF386C /* PBXTargetDependency */,
 			);
-			name = YugoproTests;
+			name = YugoproServiceTests;
 			productName = yugoproTests;
-			productReference = AC526EB1270FC91C00EF386C /* YugoproTests.xctest */;
+			productReference = AC526EB1270FC91C00EF386C /* YugoproServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC526EA2270FC91C00EF386C /* Build configuration list for PBXProject "Yugopro" */;
+			buildConfigurationList = AC526EA2270FC91C00EF386C /* Build configuration list for PBXProject "YugoproService" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -203,8 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC526EA7270FC91C00EF386C /* Yugopro */,
-				AC526EB0270FC91C00EF386C /* YugoproTests */,
+				AC526EA7270FC91C00EF386C /* YugoproService */,
+				AC526EB0270FC91C00EF386C /* YugoproServiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		AC526EB4270FC91C00EF386C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC526EA7270FC91C00EF386C /* Yugopro */;
+			target = AC526EA7270FC91C00EF386C /* YugoproService */;
 			targetProxy = AC526EB3270FC91C00EF386C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,7 +397,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Blake.yugopro;
+				PRODUCT_BUNDLE_IDENTIFIER = "Blake.yugopro-service";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -424,7 +424,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Blake.yugopro;
+				PRODUCT_BUNDLE_IDENTIFIER = "Blake.yugopro-service";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -473,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC526EA2270FC91C00EF386C /* Build configuration list for PBXProject "Yugopro" */ = {
+		AC526EA2270FC91C00EF386C /* Build configuration list for PBXProject "YugoproService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC526EBA270FC91C00EF386C /* Debug */,
@@ -482,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC526EBC270FC91C00EF386C /* Build configuration list for PBXNativeTarget "Yugopro" */ = {
+		AC526EBC270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC526EBD270FC91C00EF386C /* Debug */,
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC526EBF270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproTests" */ = {
+		AC526EBF270FC91C00EF386C /* Build configuration list for PBXNativeTarget "YugoproServiceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC526EC0270FC91C00EF386C /* Debug */,
