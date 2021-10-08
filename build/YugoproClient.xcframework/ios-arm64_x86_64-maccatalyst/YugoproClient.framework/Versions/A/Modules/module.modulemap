@@ -1,4 +1,0 @@
-framework module YugoproClient {
-  header "YugoproClient-Swift.h"
-  requires objc
-}
