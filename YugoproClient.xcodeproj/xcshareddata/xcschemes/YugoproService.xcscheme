@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC526EA7270FC91C00EF386C"
-               BuildableName = "YugoproService.framework"
-               BlueprintName = "YugoproService"
-               ReferencedContainer = "container:YugoproService.xcodeproj">
+               BuildableName = "YugoproClient.framework"
+               BlueprintName = "YugoproClient"
+               ReferencedContainer = "container:YugoproClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC526EA7270FC91C00EF386C"
-            BuildableName = "YugoproService.framework"
-            BlueprintName = "YugoproService"
-            ReferencedContainer = "container:YugoproService.xcodeproj">
+            BuildableName = "YugoproClient.framework"
+            BlueprintName = "YugoproClient"
+            ReferencedContainer = "container:YugoproClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,5 +1,5 @@
 //
-//  YGOPRODeckService.swift
+//  YGOPRODeckClient.swift
 //  YugiohCardDB
 //
 //  Created by Blake Harrison on 1/25/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class YGOPRODeckService {
+public class YGOPRODeckClient {
     public typealias CardsDataCompletion = (_ cardData: [CardData]?, _ error: Error?) -> ()
     
     public static func getAllCards(completion: @escaping CardsDataCompletion) {
