@@ -1,4 +1,4 @@
-# Yugopro Service
+# Yugopro Client (iOS)
 A framework to encapsulate the service code and models for the YuGoPro API.
 
 ### API Reference 
